@@ -1,15 +1,106 @@
-<HTML>
-  <HEAD><TITLE> Please confirm your enrollment by making the payment</TITLE>
-  <BODY>
-<br><a href="upi://pay?pa=saquebsiddiqui@okicici&pn=Saqueb+Siddiqui&am=4000&tn=Lean+Startup+Course">
-Pay ₹4000 for Lean Startup Course
-</a></br>
-<a href="upi://pay?pa=saquebsiddiqui@okicici&pn=Saqueb+Siddiqui&am=5000&tn=Project+Management+Course">
-Pay ₹5000 for Project Management
-</a></br>
-<br><a href="upi://pay?pa=saquebsiddiqui@okicici&pn=Saqueb+Siddiqui&am=5000&tn=Product+Management+Course">
-Pay ₹5000 for Product Management
-</a></br>
-  </BODY>
-  </HEAD>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirm Enrollment - Make Payment</title>
+  <style>
+    :root {
+      --primary-color: #007BFF;
+      --secondary-color: #f8f9fa;
+      --accent-color: #343a40;
+      --font-ratio: 1.618;
+      --max-width: 700px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: var(--secondary-color);
+      color: var(--accent-color);
+      padding: 5vh 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      width: 100%;
+      max-width: var(--max-width);
+      padding: calc(1rem * var(--font-ratio));
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: calc(1.5rem * var(--font-ratio));
+      margin-bottom: calc(1rem * var(--font-ratio));
+      text-align: center;
+      color: var(--primary-color);
+    }
+
+    .payment-link {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .payment-link:hover {
+      background-color: #0056b3;
+    }
+
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .payment-link {
+        font-size: 1.25rem;
+        margin: 1.2rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Please Confirm Your Enrollment</h2>
+
+    <a class="payment-link"
+       href="upi://pay?pa=saquebsiddiqui@okicici&pn=Saqueb%20Siddiqui&am=4000&tn=Lean%20Startup%20Course"
+       target="_blank"
+       rel="noopener noreferrer">
+       Pay ₹4000 for Lean Startup Course
+    </a>
+
+    <a class="payment-link"
+       href="upi://pay?pa=saquebsiddiqui@okicici&pn=Saqueb%20Siddiqui&am=5000&tn=Project%20Management%20Course"
+       target="_blank"
+       rel="noopener noreferrer">
+       Pay ₹5000 for Project Management Course
+    </a>
+
+    <a class="payment-link"
+       href="upi://pay?pa=saquebsiddiqui@okicici&pn=Saqueb%20Siddiqui&am=5000&tn=Product%20Management%20Course"
+       target="_blank"
+       rel="noopener noreferrer">
+       Pay ₹5000 for Product Management Course
+    </a>
+  </div>
+</body>
+</html>
